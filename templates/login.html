@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block content %}
+<section style="max-width:520px;margin:40px auto">
+  <h1>Sign in</h1>
+  <form method="post" class="grid">
+    <label>Username<input name="username" required></label>
+    <label>Password<input name="password" type="password" required></label>
+    <button type="submit">Login</button>
+  </form>
+</section>
+<section style="max-width:520px;margin:40px auto">
+  <h2>Create account</h2>
+  <form method="post" action="{{ url_for('register') }}" class="grid registration-form">
+    <label>Account type<select id="registration-role" name="role"><option value="USER">USER</option><option value="ADMIN">ADMIN</option></select></label>
+    <div id="user-registration-fields" class="registration-fields">
+      <input name="student_name" placeholder="Student name">
+      <input name="student_number" placeholder="Student number">
+      <input name="section" placeholder="Section">
+    </div>
+    <div id="admin-registration-fields" class="registration-fields" hidden>
+      <input name="admin_name" placeholder="Name">
+    </div>
+    <input name="username" placeholder="Username" required>
+    <input name="email" type="email" placeholder="Email" required>
+    <input name="password" type="password" placeholder="Password" required>
+    <button type="submit">Register</button>
+  </form>
+</section>
+<section style="max-width:520px;margin:40px auto">
+  <h2>Request password reset</h2>
+  <form method="post" action="{{ url_for('reset_request') }}" class="grid">
+    <input name="username" placeholder="Username" required>
+    <input name="email" type="email" placeholder="Account email" required>
+    <button type="submit">Request reset</button>
+  </form>
+</section>
+<script>
+  const registrationRole = document.getElementById("registration-role");
+  const userRegistrationFields = document.getElementById("user-registration-fields");
+  const adminRegistrationFields = document.getElementById("admin-registration-fields");
+  const userFields = userRegistrationFields.querySelectorAll("input");
+  const adminFields = adminRegistrationFields.querySelectorAll("input");
+
+  function updateRegistrationFields() {
+    const isAdmin = registrationRole.value === "ADMIN";
+    userRegistrationFields.hidden = isAdmin;
+    adminRegistrationFields.hidden = !isAdmin;
+    userFields.forEach((field) => { field.required = !isAdmin; field.disabled = isAdmin; });
+    adminFields.forEach((field) => { field.required = isAdmin; field.disabled = !isAdmin; });
+  }
+
+  registrationRole.addEventListener("change", updateRegistrationFields);
+  updateRegistrationFields();
+</script>
+{% endblock %}

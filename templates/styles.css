@@ -1,0 +1,417 @@
+:root {
+  color-scheme: light;
+  font-family: Segoe UI, sans-serif;
+  background: #eef3f6;
+  color: #243746;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background: #17324d;
+  color: white;
+  padding: 18px 6vw;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+}
+
+main {
+  max-width: 1180px;
+  margin: 28px auto;
+  padding: 0 18px;
+}
+
+section,
+.panel {
+  background: white;
+  border: 1px solid #d4dee5;
+  border-radius: 8px;
+  padding: 18px;
+  margin-bottom: 18px;
+}
+
+input,
+select,
+button {
+  box-sizing: border-box;
+  padding: 9px;
+  border: 1px solid #bdcbd4;
+  border-radius: 4px;
+}
+
+input,
+select {
+  width: 100%;
+}
+
+button {
+  background: #245b82;
+  color: white;
+  cursor: pointer;
+  border: 0;
+}
+
+button.danger {
+  background: #c0392b;
+}
+
+button.success {
+  background: #218739;
+}
+
+a {
+  color: inherit;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 9px;
+  border-radius: 4px;
+  background: #245b82;
+  color: white;
+  text-decoration: none;
+}
+
+.search-form button,
+.search-form .button-link {
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.button-link:hover,
+button:hover {
+  filter: brightness(0.92);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.grid > label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #243746;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.registration-form {
+  grid-template-columns: 1fr;
+}
+
+.registration-form > input,
+.registration-form > label,
+.registration-fields input {
+  min-width: 0;
+}
+
+.registration-fields {
+  display: grid;
+  grid-column: 1;
+  gap: 8px;
+  align-self: start;
+}
+
+.registration-fields[hidden] {
+  display: none !important;
+}
+
+.registration-form > button {
+  min-height: 42px;
+}
+
+.schedule-form {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: end;
+}
+
+.schedule-form button {
+  min-height: 42px;
+}
+
+.metric {
+  background: #17324d;
+  color: white;
+  padding: 16px;
+  border-radius: 6px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 9px;
+  border-bottom: 1px solid #e1e8ec;
+  text-align: left;
+  vertical-align: top;
+}
+
+.flash {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background: #fff1cf;
+}
+
+.flash.success {
+  background: #d9eee6;
+}
+
+.flash.danger {
+  background: #fbe4e2;
+}
+
+.inline {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.inline input {
+  width: 80px;
+}
+
+.search-form {
+  width: 100%;
+}
+
+.search-toolbar-section {
+  margin-top: 22px;
+}
+
+.search-form input[name="search"] {
+  width: min(520px, 100%);
+  flex: 1 1 360px;
+  height: 42px;
+}
+
+.admin-inventory-panel {
+  min-width: 0;
+  margin-bottom: 0;
+}
+
+.admin-dashboard-row {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.9fr) minmax(520px, 1.5fr);
+  gap: 18px;
+  align-items: start;
+  margin-bottom: 18px;
+}
+
+.admin-approval-panel {
+  min-width: 0;
+  margin-bottom: 0;
+}
+
+.item-selector {
+  max-width: 420px;
+  margin-top: 6px;
+}
+
+.selected-item-actions {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.user-actions-panel {
+  margin-top: 22px;
+}
+
+.user-actions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.action-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  border: 1px solid #d4dee5;
+  border-radius: 6px;
+}
+
+.action-form h3 {
+  margin: 0;
+  color: #17324d;
+}
+
+.action-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-weight: 600;
+}
+
+.action-note {
+  margin: 0;
+  color: #607482;
+}
+
+.user-records-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.user-record-section {
+  margin-top: 22px;
+}
+
+.user-records-grid h3 {
+  margin: 0 0 10px;
+  color: #17324d;
+}
+
+.update-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.update-form label,
+.inline label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #243746;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.update-form input {
+  width: 92px;
+}
+
+.delete-form {
+  margin: 0;
+}
+
+.status-in-stock {
+  color: #176044;
+  font-weight: 700;
+}
+
+.status-low-stock {
+  color: #795b12;
+  font-weight: 700;
+}
+
+.status-out-of-stock {
+  color: #8b2e25;
+  font-weight: 700;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.status-badge.status-in-stock,
+.status-badge.status-approved,
+.status-badge.status-resolved,
+.status-badge.status-returned {
+  background: #d9eee6;
+  color: #176044;
+}
+
+.status-badge.status-low-stock,
+.status-badge.status-pending,
+.status-badge.status-return-pending,
+.status-badge.status-report,
+.status-badge.status-open {
+  background: #fff1cf;
+  color: #795b12;
+}
+
+.status-badge.status-out-of-stock,
+.status-badge.status-rejected {
+  background: #fbe4e2;
+  color: #8b2e25;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 4px;
+  color: #607482;
+}
+
+.empty-state strong {
+  color: #243746;
+}
+
+.delta-positive {
+  color: #176044;
+  font-weight: 700;
+}
+
+.delta-negative {
+  color: #8b2e25;
+  font-weight: 700;
+}
+
+.delta-neutral {
+  color: #607482;
+}
+
+@media (max-width: 700px) {
+  header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .admin-dashboard-row {
+    grid-template-columns: 1fr;
+  }
+
+  .schedule-form {
+    grid-template-columns: 1fr;
+  }
+
+  .user-actions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .user-records-row {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (min-width: 701px) and (max-width: 1050px) {
+  .schedule-form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
