@@ -9,14 +9,120 @@ body {
   margin: 0;
 }
 
+@keyframes enter-from-below {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header,
+main {
+  animation: enter-from-below 420ms ease-out both;
+}
+
+main > * {
+  animation: enter-from-below 420ms ease-out both;
+}
+
+main > *:nth-child(2) {
+  animation-delay: 70ms;
+}
+
+main > *:nth-child(3) {
+  animation-delay: 140ms;
+}
+
+main > *:nth-child(4) {
+  animation-delay: 210ms;
+}
+
+main > *:nth-child(5) {
+  animation-delay: 280ms;
+}
+
 header {
   background: #17324d;
   color: white;
-  padding: 18px 6vw;
+  padding: 16px 6vw;
   display: flex;
   justify-content: space-between;
   gap: 16px;
   align-items: center;
+  border-bottom: 3px solid #d6a84f;
+  box-shadow: 0 2px 8px rgb(23 50 77 / 18%);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.brand strong {
+  font-family: Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.brand strong span {
+  color: #f0c86b;
+}
+
+.brand-mark {
+  display: inline-grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid #f0c86b;
+  border-radius: 6px;
+  color: #f0c86b;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.account-menu {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.account-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.account-name {
+  font-weight: 700;
+}
+
+.account-role {
+  color: #b9cad8;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+}
+
+.logout-link {
+  padding: 7px 11px;
+  border: 1px solid #7691a7;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  transition: filter 160ms ease, background-color 160ms ease;
+}
+
+.logout-link:hover {
+  background: #245b82;
+  filter: brightness(0.92);
 }
 
 main {
@@ -53,6 +159,7 @@ button {
   color: white;
   cursor: pointer;
   border: 0;
+  transition: filter 160ms ease;
 }
 
 button.danger {
@@ -386,6 +493,15 @@ td {
     flex-direction: column;
   }
 
+  .account-menu {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .account-details {
+    align-items: flex-start;
+  }
+
   table {
     display: block;
     overflow-x: auto;
@@ -408,6 +524,14 @@ td {
     grid-template-columns: 1fr;
   }
 
+}
+
+@media (prefers-reduced-motion: reduce) {
+  header,
+  main,
+  main > * {
+    animation: none;
+  }
 }
 
 @media (min-width: 701px) and (max-width: 1050px) {

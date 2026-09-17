@@ -575,3 +575,65 @@
 2026-09-11 17:40:22 - INFO - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:40:22] "GET /styles.css HTTP/1.1" 304 -
 2026-09-11 17:41:00 - INFO - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:41:00] "GET /login HTTP/1.1" 200 -
 2026-09-11 17:41:33 - INFO - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:41:33] "GET /login HTTP/1.1" 200 -
+2026-09-17 08:00:54 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-09-17 08:00:54 - INFO - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-09-17 08:00:54 - INFO - werkzeug - Press CTRL+C to quit
+2026-09-17 08:00:54 - INFO - werkzeug -  * Restarting with stat
+2026-09-17 08:00:55 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-09-17 08:00:55 - WARNING - werkzeug -  * Debugger is active!
+2026-09-17 08:00:55 - INFO - werkzeug -  * Debugger PIN: 129-861-341
+2026-09-17 08:01:01 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:01:01] "GET / HTTP/1.1" 302 -
+2026-09-17 08:01:01 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:01:01] "GET /login HTTP/1.1" 200 -
+2026-09-17 08:01:01 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:01:01] "GET /styles.css HTTP/1.1" 200 -
+2026-09-17 08:01:24 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:01:24] "GET /login HTTP/1.1" 200 -
+2026-09-17 08:01:24 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:01:24] "GET /styles.css HTTP/1.1" 200 -
+2026-09-17 08:01:24 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:01:24] "GET /favicon.ico HTTP/1.1" 404 -
+2026-09-17 08:02:07 - WARNING - AppLogger - Failed login attempt for username: markyfufufuP@1
+2026-09-17 08:02:07 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:02:07] "POST /login HTTP/1.1" 200 -
+2026-09-17 08:02:07 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:02:07] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:02:11 - WARNING - AppLogger - Failed login attempt for username: markyfufufu
+2026-09-17 08:02:11 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:02:11] "POST /login HTTP/1.1" 200 -
+2026-09-17 08:02:11 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:02:11] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:02:32 - INFO - AppLogger - User 'markk' logged in with role 'USER'.
+2026-09-17 08:02:32 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:02:32] "POST /login HTTP/1.1" 302 -
+2026-09-17 08:02:32 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:02:32] "GET /dashboard HTTP/1.1" 200 -
+2026-09-17 08:02:32 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:02:32] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:11:06 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:11:06] "GET / HTTP/1.1" 302 -
+2026-09-17 08:11:06 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:11:06] "GET /login HTTP/1.1" 200 -
+2026-09-17 08:11:06 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:11:06] "GET /styles.css HTTP/1.1" 200 -
+2026-09-17 08:11:06 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:11:06] "GET /favicon.ico HTTP/1.1" 404 -
+2026-09-17 08:11:27 - INFO - AppLogger - User 'markk' logged in with role 'USER'.
+2026-09-17 08:11:27 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:11:27] "POST /login HTTP/1.1" 302 -
+2026-09-17 08:11:27 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:11:27] "GET /dashboard HTTP/1.1" 200 -
+2026-09-17 08:11:27 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:11:27] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:13:10 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:13:10] "GET /dashboard HTTP/1.1" 200 -
+2026-09-17 08:13:10 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:13:10] "GET /styles.css HTTP/1.1" 200 -
+2026-09-17 08:16:46 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:16:46] "GET /dashboard HTTP/1.1" 200 -
+2026-09-17 08:16:46 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:16:46] "GET /styles.css HTTP/1.1" 200 -
+2026-09-17 08:16:48 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:16:48] "GET / HTTP/1.1" 302 -
+2026-09-17 08:16:48 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:16:48] "GET /dashboard HTTP/1.1" 200 -
+2026-09-17 08:16:48 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:16:48] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:16:48 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:16:48] "GET / HTTP/1.1" 302 -
+2026-09-17 08:16:48 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:16:48] "GET /dashboard HTTP/1.1" 200 -
+2026-09-17 08:16:48 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:16:48] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:16:48 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:16:48] "GET / HTTP/1.1" 302 -
+2026-09-17 08:16:48 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:16:48] "GET /dashboard HTTP/1.1" 200 -
+2026-09-17 08:16:48 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:16:48] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:16:49 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:16:49] "GET / HTTP/1.1" 302 -
+2026-09-17 08:16:49 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:16:49] "GET /dashboard HTTP/1.1" 200 -
+2026-09-17 08:16:49 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:16:49] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:16:53 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:16:53] "GET /logout HTTP/1.1" 302 -
+2026-09-17 08:16:53 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:16:53] "GET /login HTTP/1.1" 200 -
+2026-09-17 08:16:53 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:16:53] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:17:38 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:17:38] "GET /dashboard HTTP/1.1" 200 -
+2026-09-17 08:17:38 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:17:38] "GET /styles.css HTTP/1.1" 200 -
+2026-09-17 08:17:39 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:17:39] "GET /logout HTTP/1.1" 302 -
+2026-09-17 08:17:39 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:17:39] "GET /login HTTP/1.1" 200 -
+2026-09-17 08:17:39 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:17:39] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:18:19 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:18:19] "GET / HTTP/1.1" 302 -
+2026-09-17 08:18:19 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:18:19] "GET /login HTTP/1.1" 200 -
+2026-09-17 08:18:19 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:18:19] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:18:20 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:18:20] "GET / HTTP/1.1" 302 -
+2026-09-17 08:18:20 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:18:20] "GET /login HTTP/1.1" 200 -
+2026-09-17 08:18:20 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:18:20] "GET /styles.css HTTP/1.1" 304 -
