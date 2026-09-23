@@ -1036,3 +1036,27 @@ LINE 1: PRAGMA busy_timeout = 5000
 2026-09-24 06:54:02 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:54:02] "POST /admin/borrow-action HTTP/1.1" 302 -
 2026-09-24 06:54:12 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:54:12] "GET /dashboard HTTP/1.1" 200 -
 2026-09-24 06:54:12 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:54:12] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 07:11:44 - INFO - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-09-24 07:11:44 - INFO - werkzeug - Press CTRL+C to quit
+2026-09-24 07:11:44 - INFO - werkzeug -  * Restarting with stat
+2026-09-24 07:11:46 - WARNING - werkzeug -  * Debugger is active!
+2026-09-24 07:11:46 - INFO - werkzeug -  * Debugger PIN: 747-028-282
+2026-09-24 07:11:46 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 07:11:46] "GET / HTTP/1.1" 302 -
+2026-09-24 07:11:46 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 07:11:46] "GET /login HTTP/1.1" 200 -
+2026-09-24 07:11:46 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 07:11:46] "GET /styles.css HTTP/1.1" 200 -
+2026-09-24 07:11:46 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 07:11:46] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 07:14:04 - INFO - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-09-24 07:14:04 - INFO - werkzeug - Press CTRL+C to quit
+2026-09-24 07:14:04 - INFO - werkzeug -  * Restarting with stat
+2026-09-24 07:14:07 - WARNING - werkzeug -  * Debugger is active!
+2026-09-24 07:14:07 - INFO - werkzeug -  * Debugger PIN: 747-028-282
+2026-09-24 07:14:07 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 07:14:07] "GET / HTTP/1.1" 302 -
+2026-09-24 07:14:07 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 07:14:07] "GET /login HTTP/1.1" 200 -
+2026-09-24 07:14:07 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 07:14:07] "GET /styles.css HTTP/1.1" 200 -
+2026-09-24 07:14:07 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 07:14:07] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 07:15:46 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 07:15:46] "GET /login HTTP/1.1" 200 -
+2026-09-24 07:15:46 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 07:15:46] "GET /styles.css HTTP/1.1" 200 -
+2026-09-24 07:15:47 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 07:15:47] "GET /login HTTP/1.1" 200 -
+2026-09-24 07:15:47 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 07:15:47] "GET /styles.css HTTP/1.1" 304 -

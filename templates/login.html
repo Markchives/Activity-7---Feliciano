@@ -2,12 +2,12 @@
 {% block content %}
 <section style="max-width:520px;margin:40px auto">
   <h1>Sign in</h1>
-  <form method="post" class="grid">
+  <form method="post" class="grid login-form">
     <label>Username<input name="username" required></label>
     <label>Password
       <span class="password-field">
         <input id="login-password" name="password" type="password" required>
-        <span class="password-toggle"><input type="checkbox" data-password-toggle="login-password"> Show password</span>
+        <button class="password-toggle" type="button" data-password-toggle="login-password" aria-label="Show password" title="Show password">Show</button>
       </span>
     </label>
     <button type="submit">Login</button>
@@ -30,7 +30,7 @@
     <label>Password
       <span class="password-field">
         <input id="registration-password" name="password" type="password" placeholder="Password" required>
-        <span class="password-toggle"><input type="checkbox" data-password-toggle="registration-password"> Show password</span>
+        <button class="password-toggle" type="button" data-password-toggle="registration-password" aria-label="Show password" title="Show password">Show</button>
       </span>
     </label>
     <button type="submit">Register</button>
@@ -38,7 +38,7 @@
 </section>
 <section style="max-width:520px;margin:40px auto">
   <h2>Request password reset</h2>
-  <form method="post" action="{{ url_for('reset_request') }}" class="grid">
+  <form method="post" action="{{ url_for('reset_request') }}" class="grid reset-form">
     <input name="username" placeholder="Username" required>
     <input name="email" type="email" placeholder="Account email" required>
     <button type="submit">Request reset</button>
@@ -60,9 +60,13 @@
   }
 
     document.querySelectorAll("[data-password-toggle]").forEach((toggle) => {
-      toggle.addEventListener("change", () => {
+      toggle.addEventListener("click", () => {
         const passwordField = document.getElementById(toggle.dataset.passwordToggle);
-        passwordField.type = toggle.checked ? "text" : "password";
+        const isVisible = passwordField.type === "text";
+        passwordField.type = isVisible ? "password" : "text";
+        toggle.textContent = isVisible ? "Show" : "Hide";
+        toggle.setAttribute("aria-label", isVisible ? "Show password" : "Hide password");
+        toggle.setAttribute("title", isVisible ? "Show password" : "Hide password");
       });
     });
 

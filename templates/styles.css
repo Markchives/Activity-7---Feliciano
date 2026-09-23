@@ -204,6 +204,13 @@ button:hover {
   gap: 12px;
 }
 
+.login-form > button,
+.reset-form > button {
+  grid-column: 1 / -1;
+  width: 100%;
+  min-height: 42px;
+}
+
 .grid > label {
   display: flex;
   flex-direction: column;
@@ -214,30 +221,25 @@ button:hover {
 }
 
 .password-field {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  position: relative;
+  display: block;
 }
 
 .password-field > input {
-  min-width: 0;
-  flex: 1;
+  padding-right: 58px;
 }
 
 .password-toggle {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  flex: 0 0 auto;
-  color: #526675;
-  font-size: 0.78rem;
-  font-weight: 400;
-  white-space: nowrap;
-}
-
-.password-toggle input {
+  position: absolute;
+  top: 50%;
+  right: 5px;
   width: auto;
-  margin: 0;
+  padding: 3px 5px;
+  transform: translateY(-50%);
+  background: transparent;
+  color: #526675;
+  font-size: 0.75rem;
+  font-weight: 600;
 }
 
 .registration-form {
