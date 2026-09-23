@@ -637,3 +637,402 @@
 2026-09-17 08:18:20 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:18:20] "GET / HTTP/1.1" 302 -
 2026-09-17 08:18:20 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:18:20] "GET /login HTTP/1.1" 200 -
 2026-09-17 08:18:20 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:18:20] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:22:30 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:22:30] "GET /login HTTP/1.1" 200 -
+2026-09-17 08:22:30 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:22:30] "GET /styles.css HTTP/1.1" 200 -
+2026-09-17 08:22:38 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:22:38] "GET /login HTTP/1.1" 200 -
+2026-09-17 08:22:38 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:22:38] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:22:44 - INFO - AppLogger - User 'markk' logged in with role 'USER'.
+2026-09-17 08:22:44 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:22:44] "POST /login HTTP/1.1" 302 -
+2026-09-17 08:22:44 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:22:44] "GET /dashboard HTTP/1.1" 200 -
+2026-09-17 08:22:44 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:22:44] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:27:24 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:27:24] "GET / HTTP/1.1" 302 -
+2026-09-17 08:27:24 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:27:24] "GET /login HTTP/1.1" 200 -
+2026-09-17 08:27:25 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:27:25] "GET /styles.css HTTP/1.1" 200 -
+2026-09-17 08:27:31 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:27:31] "GET / HTTP/1.1" 302 -
+2026-09-17 08:27:31 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:27:31] "GET /login HTTP/1.1" 200 -
+2026-09-17 08:27:31 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:27:31] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:27:31 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:27:31] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:28:09 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:28:09] "GET /logout HTTP/1.1" 302 -
+2026-09-17 08:28:09 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:28:09] "GET /login HTTP/1.1" 200 -
+2026-09-17 08:28:09 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:28:09] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:29:10 - WARNING - AppLogger - Failed login attempt for username: admin (1/3)
+2026-09-17 08:29:10 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:29:10] "POST /login HTTP/1.1" 200 -
+2026-09-17 08:29:10 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:29:10] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:29:46 - INFO - AppLogger - Account created: 'markkadmin' with role 'ADMIN'
+2026-09-17 08:29:46 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:29:46] "POST /register HTTP/1.1" 302 -
+2026-09-17 08:29:46 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:29:46] "GET /login HTTP/1.1" 200 -
+2026-09-17 08:29:46 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:29:46] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:29:51 - INFO - AppLogger - User 'markkadmin' logged in with role 'ADMIN'.
+2026-09-17 08:29:51 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:29:51] "POST /login HTTP/1.1" 302 -
+2026-09-17 08:29:51 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:29:51] "GET /dashboard HTTP/1.1" 200 -
+2026-09-17 08:29:51 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:29:51] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:30:36 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:30:36] "POST /admin/schedule HTTP/1.1" 302 -
+2026-09-17 08:30:36 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:30:36] "GET /dashboard HTTP/1.1" 200 -
+2026-09-17 08:30:36 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:30:36] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:30:45 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:30:45] "GET /logout HTTP/1.1" 302 -
+2026-09-17 08:30:45 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:30:45] "GET /login HTTP/1.1" 200 -
+2026-09-17 08:30:45 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:30:45] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:30:56 - INFO - AppLogger - User 'markk' logged in with role 'USER'.
+2026-09-17 08:30:56 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:30:56] "POST /login HTTP/1.1" 302 -
+2026-09-17 08:30:56 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:30:56] "GET /dashboard HTTP/1.1" 200 -
+2026-09-17 08:30:56 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:30:56] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:31:20 - INFO - AppLogger - Borrow request submitted by 'markk' for item ID 2
+2026-09-17 08:31:20 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:31:20] "POST /borrow HTTP/1.1" 302 -
+2026-09-17 08:31:20 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:31:20] "GET /dashboard HTTP/1.1" 200 -
+2026-09-17 08:31:20 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:31:20] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:31:30 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:31:30] "GET /logout HTTP/1.1" 302 -
+2026-09-17 08:31:30 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:31:30] "GET /login HTTP/1.1" 200 -
+2026-09-17 08:31:30 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:31:30] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:31:40 - INFO - AppLogger - User 'markkadmin' logged in with role 'ADMIN'.
+2026-09-17 08:31:40 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:31:40] "POST /login HTTP/1.1" 302 -
+2026-09-17 08:31:40 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:31:40] "GET /dashboard HTTP/1.1" 200 -
+2026-09-17 08:31:40 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:31:40] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:31:51 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:31:51] "POST /admin/borrow-action HTTP/1.1" 302 -
+2026-09-17 08:31:51 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:31:51] "GET /dashboard HTTP/1.1" 200 -
+2026-09-17 08:31:51 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:31:51] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:32:02 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:32:02] "GET /logout HTTP/1.1" 302 -
+2026-09-17 08:32:02 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:32:02] "GET /login HTTP/1.1" 200 -
+2026-09-17 08:32:02 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:32:02] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:32:07 - WARNING - AppLogger - Failed login attempt for username: markk (1/3)
+2026-09-17 08:32:07 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:32:07] "POST /login HTTP/1.1" 200 -
+2026-09-17 08:32:07 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:32:07] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:32:14 - INFO - AppLogger - User 'markk' logged in with role 'USER'.
+2026-09-17 08:32:14 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:32:14] "POST /login HTTP/1.1" 302 -
+2026-09-17 08:32:14 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:32:14] "GET /dashboard HTTP/1.1" 200 -
+2026-09-17 08:32:14 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:32:14] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:32:23 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:32:23] "POST /return-request HTTP/1.1" 302 -
+2026-09-17 08:32:23 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:32:23] "GET /dashboard HTTP/1.1" 200 -
+2026-09-17 08:32:23 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:32:23] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:32:28 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:32:28] "GET /logout HTTP/1.1" 302 -
+2026-09-17 08:32:28 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:32:28] "GET /login HTTP/1.1" 200 -
+2026-09-17 08:32:28 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:32:28] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:32:36 - INFO - AppLogger - User 'markkadmin' logged in with role 'ADMIN'.
+2026-09-17 08:32:36 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:32:36] "POST /login HTTP/1.1" 302 -
+2026-09-17 08:32:36 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:32:36] "GET /dashboard HTTP/1.1" 200 -
+2026-09-17 08:32:36 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:32:36] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:32:42 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:32:42] "POST /admin/return-action HTTP/1.1" 302 -
+2026-09-17 08:32:42 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:32:42] "GET /dashboard HTTP/1.1" 200 -
+2026-09-17 08:32:42 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 08:32:42] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 08:53:48 - INFO - werkzeug -  * Detected change in 'd:\\wow\\Software Engineer Lab Act\\ACT 7 Feliciano\\ACT 7.py', reloading
+2026-09-17 08:53:49 - INFO - werkzeug -  * Restarting with stat
+2026-09-17 08:53:50 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-09-17 08:53:50 - WARNING - werkzeug -  * Debugger is active!
+2026-09-17 08:53:50 - INFO - werkzeug -  * Debugger PIN: 129-861-341
+2026-09-17 08:54:14 - INFO - werkzeug -  * Detected change in 'd:\\wow\\Software Engineer Lab Act\\ACT 7 Feliciano\\ACT 7.py', reloading
+2026-09-17 08:54:14 - INFO - werkzeug -  * Restarting with stat
+2026-09-17 08:54:15 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-09-17 08:54:15 - WARNING - werkzeug -  * Debugger is active!
+2026-09-17 08:54:15 - INFO - werkzeug -  * Debugger PIN: 129-861-341
+2026-09-17 08:54:23 - INFO - werkzeug -  * Detected change in 'd:\\wow\\Software Engineer Lab Act\\ACT 7 Feliciano\\ACT 7.py', reloading
+2026-09-17 08:54:23 - INFO - werkzeug -  * Restarting with stat
+2026-09-17 08:54:23 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-09-17 08:54:23 - WARNING - werkzeug -  * Debugger is active!
+2026-09-17 08:54:23 - INFO - werkzeug -  * Debugger PIN: 129-861-341
+2026-09-17 08:54:30 - INFO - werkzeug -  * Detected change in 'd:\\wow\\Software Engineer Lab Act\\ACT 7 Feliciano\\ACT 7.py', reloading
+2026-09-17 08:54:31 - INFO - werkzeug -  * Restarting with stat
+2026-09-17 08:54:31 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-09-17 08:54:31 - WARNING - werkzeug -  * Debugger is active!
+2026-09-17 08:54:31 - INFO - werkzeug -  * Debugger PIN: 129-861-341
+2026-09-17 08:55:50 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-09-17 08:56:05 - INFO - werkzeug -  * Detected change in 'd:\\wow\\Software Engineer Lab Act\\ACT 7 Feliciano\\migrate_sqlite_to_postgresql.py', reloading
+2026-09-17 08:56:05 - INFO - werkzeug -  * Restarting with stat
+2026-09-17 08:56:06 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-09-17 08:56:06 - WARNING - werkzeug -  * Debugger is active!
+2026-09-17 08:56:06 - INFO - werkzeug -  * Debugger PIN: 129-861-341
+2026-09-17 09:01:30 - INFO - werkzeug -  * Detected change in 'd:\\wow\\Software Engineer Lab Act\\ACT 7 Feliciano\\ACT 7.py', reloading
+2026-09-17 09:01:30 - INFO - werkzeug -  * Restarting with stat
+2026-09-17 09:55:35 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-09-17 09:55:35 - INFO - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-09-17 09:55:35 - INFO - werkzeug - Press CTRL+C to quit
+2026-09-17 09:55:35 - INFO - werkzeug -  * Restarting with stat
+2026-09-17 09:55:36 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-09-17 09:55:36 - WARNING - werkzeug -  * Debugger is active!
+2026-09-17 09:55:36 - INFO - werkzeug -  * Debugger PIN: 129-861-341
+2026-09-17 09:56:01 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 09:56:01] "GET / HTTP/1.1" 302 -
+2026-09-17 09:56:02 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 09:56:02] "GET /dashboard HTTP/1.1" 200 -
+2026-09-17 09:56:02 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 09:56:02] "GET /styles.css HTTP/1.1" 200 -
+2026-09-17 09:56:08 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 09:56:08] "GET /logout HTTP/1.1" 302 -
+2026-09-17 09:56:08 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 09:56:08] "GET /login HTTP/1.1" 200 -
+2026-09-17 09:56:08 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 09:56:08] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 09:56:18 - INFO - AppLogger - User 'markk' logged in with role 'USER'.
+2026-09-17 09:56:18 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 09:56:18] "POST /login HTTP/1.1" 302 -
+2026-09-17 09:56:18 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 09:56:18] "GET /dashboard HTTP/1.1" 200 -
+2026-09-17 09:56:18 - INFO - werkzeug - 127.0.0.1 - - [17/Sep/2026 09:56:18] "GET /styles.css HTTP/1.1" 304 -
+2026-09-17 09:58:19 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-09-17 09:58:20 - INFO - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-09-17 09:58:20 - INFO - werkzeug - Press CTRL+C to quit
+2026-09-17 09:58:20 - INFO - werkzeug -  * Restarting with stat
+2026-09-17 09:58:20 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-09-17 09:58:20 - WARNING - werkzeug -  * Debugger is active!
+2026-09-17 09:58:20 - INFO - werkzeug -  * Debugger PIN: 129-861-341
+2026-09-17 09:58:46 - INFO - werkzeug -  * Detected change in 'D:\\wow\\Software Engineer Lab Act\\ACT 7 Feliciano\\migrate_sqlite_to_postgresql.py', reloading
+2026-09-17 09:58:47 - INFO - werkzeug -  * Restarting with stat
+2026-09-17 09:58:47 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-09-17 09:58:47 - WARNING - werkzeug -  * Debugger is active!
+2026-09-17 09:58:47 - INFO - werkzeug -  * Debugger PIN: 129-861-341
+2026-09-24 06:09:15 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-09-24 06:09:15 - INFO - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-09-24 06:09:15 - INFO - werkzeug - Press CTRL+C to quit
+2026-09-24 06:09:15 - INFO - werkzeug -  * Restarting with stat
+2026-09-24 06:09:16 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-09-24 06:09:16 - WARNING - werkzeug -  * Debugger is active!
+2026-09-24 06:09:16 - INFO - werkzeug -  * Debugger PIN: 747-028-282
+2026-09-24 06:21:16 - INFO - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-09-24 06:21:16 - INFO - werkzeug - Press CTRL+C to quit
+2026-09-24 06:21:16 - INFO - werkzeug -  * Restarting with stat
+2026-09-24 06:21:18 - WARNING - werkzeug -  * Debugger is active!
+2026-09-24 06:21:18 - INFO - werkzeug -  * Debugger PIN: 747-028-282
+2026-09-24 06:22:16 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:22:16] "GET / HTTP/1.1" 302 -
+2026-09-24 06:22:16 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:22:16] "GET /login HTTP/1.1" 200 -
+2026-09-24 06:22:16 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:22:16] "GET /styles.css HTTP/1.1" 200 -
+2026-09-24 06:22:16 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:22:16] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:22:43 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:22:43] "GET / HTTP/1.1" 302 -
+2026-09-24 06:22:43 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:22:43] "GET /login HTTP/1.1" 200 -
+2026-09-24 06:22:43 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:22:43] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:22:43 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:22:43] "GET /favicon.ico HTTP/1.1" 404 -
+2026-09-24 06:23:19 - ERROR - AppLogger - Database lock during login for username 'markyfufufu': syntax error at or near "PRAGMA"
+LINE 1: PRAGMA busy_timeout = 5000
+        ^
+2026-09-24 06:23:19 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:23:19] "POST /login HTTP/1.1" 200 -
+2026-09-24 06:23:19 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:23:19] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:23:35 - ERROR - AppLogger - Database lock during login for username 'mokmokmoki': syntax error at or near "PRAGMA"
+LINE 1: PRAGMA busy_timeout = 5000
+        ^
+2026-09-24 06:23:35 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:23:35] "POST /login HTTP/1.1" 200 -
+2026-09-24 06:23:35 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:23:35] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:23:55 - ERROR - AppLogger - Database lock during registration for username 'mokimoki': syntax error at or near "PRAGMA"
+LINE 1: PRAGMA busy_timeout = 5000
+        ^
+2026-09-24 06:23:55 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:23:55] "POST /register HTTP/1.1" 302 -
+2026-09-24 06:23:55 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:23:55] "GET /login HTTP/1.1" 200 -
+2026-09-24 06:23:55 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:23:55] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:28:34 - INFO - werkzeug -  * Detected change in 'D:\\wow\\Software Engineer Lab Act\\ACT 7 Feliciano\\ACT 7.py', reloading
+2026-09-24 06:28:35 - INFO - werkzeug -  * Restarting with stat
+2026-09-24 06:28:38 - WARNING - werkzeug -  * Debugger is active!
+2026-09-24 06:28:38 - INFO - werkzeug -  * Debugger PIN: 747-028-282
+2026-09-24 06:28:41 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:28:41] "GET /login HTTP/1.1" 200 -
+2026-09-24 06:28:41 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:28:41] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:28:57 - ERROR - AppLogger - Database lock during login for username 'markyfufufu': syntax error at or near "PRAGMA"
+LINE 1: PRAGMA busy_timeout = 5000
+        ^
+2026-09-24 06:28:57 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:28:57] "POST /login HTTP/1.1" 200 -
+2026-09-24 06:28:57 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:28:57] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:29:18 - ERROR - AppLogger - Database lock during registration for username 'haha': syntax error at or near "PRAGMA"
+LINE 1: PRAGMA busy_timeout = 5000
+        ^
+2026-09-24 06:29:18 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:29:18] "POST /register HTTP/1.1" 302 -
+2026-09-24 06:29:18 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:29:18] "GET /login HTTP/1.1" 200 -
+2026-09-24 06:29:18 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:29:18] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:33:36 - INFO - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-09-24 06:33:36 - INFO - werkzeug - Press CTRL+C to quit
+2026-09-24 06:33:36 - INFO - werkzeug -  * Restarting with stat
+2026-09-24 06:33:38 - WARNING - werkzeug -  * Debugger is active!
+2026-09-24 06:33:38 - INFO - werkzeug -  * Debugger PIN: 747-028-282
+2026-09-24 06:33:44 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:33:44] "GET /login HTTP/1.1" 200 -
+2026-09-24 06:33:44 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:33:44] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:33:54 - ERROR - AppLogger - Database lock during login for username 'markyfufufu': syntax error at or near "PRAGMA"
+LINE 1: PRAGMA busy_timeout = 5000
+        ^
+2026-09-24 06:33:54 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:33:54] "POST /login HTTP/1.1" 200 -
+2026-09-24 06:33:54 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:33:54] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:34:06 - WARNING - AppLogger - Registration validation failed: ['String should have at least 8 characters']
+2026-09-24 06:34:06 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:34:06] "POST /register HTTP/1.1" 302 -
+2026-09-24 06:34:06 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:34:06] "GET /login HTTP/1.1" 200 -
+2026-09-24 06:34:06 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:34:06] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:34:20 - ERROR - AppLogger - Database lock during registration for username 'aasdfa': syntax error at or near "PRAGMA"
+LINE 1: PRAGMA busy_timeout = 5000
+        ^
+2026-09-24 06:34:20 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:34:20] "POST /register HTTP/1.1" 302 -
+2026-09-24 06:34:20 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:34:20] "GET /login HTTP/1.1" 200 -
+2026-09-24 06:34:20 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:34:20] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:35:14 - INFO - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-09-24 06:35:14 - INFO - werkzeug - Press CTRL+C to quit
+2026-09-24 06:35:14 - INFO - werkzeug -  * Restarting with stat
+2026-09-24 06:35:17 - WARNING - werkzeug -  * Debugger is active!
+2026-09-24 06:35:17 - INFO - werkzeug -  * Debugger PIN: 747-028-282
+2026-09-24 06:35:23 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:35:23] "GET / HTTP/1.1" 302 -
+2026-09-24 06:35:23 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:35:23] "GET /login HTTP/1.1" 200 -
+2026-09-24 06:35:23 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:35:23] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:35:26 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:35:26] "GET /login HTTP/1.1" 200 -
+2026-09-24 06:35:26 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:35:26] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:35:43 - ERROR - AppLogger - Database lock during login for username 'markyfufufu': syntax error at or near "PRAGMA"
+LINE 1: PRAGMA busy_timeout = 5000
+        ^
+2026-09-24 06:35:43 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:35:43] "POST /login HTTP/1.1" 200 -
+2026-09-24 06:35:43 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:35:43] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:35:55 - ERROR - AppLogger - Database lock during registration for username 'dfadf': syntax error at or near "PRAGMA"
+LINE 1: PRAGMA busy_timeout = 5000
+        ^
+2026-09-24 06:35:55 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:35:55] "POST /register HTTP/1.1" 302 -
+2026-09-24 06:35:56 - ERROR - AppLogger - Database lock during registration for username 'dfadf': syntax error at or near "PRAGMA"
+LINE 1: PRAGMA busy_timeout = 5000
+        ^
+2026-09-24 06:35:56 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:35:56] "POST /register HTTP/1.1" 302 -
+2026-09-24 06:35:56 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:35:56] "GET /login HTTP/1.1" 200 -
+2026-09-24 06:35:56 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:35:56] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:36:08 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:36:08] "GET / HTTP/1.1" 302 -
+2026-09-24 06:36:08 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:36:08] "GET /login HTTP/1.1" 200 -
+2026-09-24 06:36:09 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:36:09] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:36:22 - ERROR - AppLogger - Database lock during login for username 'markyfufufu': syntax error at or near "PRAGMA"
+LINE 1: PRAGMA busy_timeout = 5000
+        ^
+2026-09-24 06:36:22 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:36:22] "POST /login HTTP/1.1" 200 -
+2026-09-24 06:36:22 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:36:22] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:37:50 - INFO - werkzeug -  * Detected change in 'D:\\wow\\Software Engineer Lab Act\\ACT 7 Feliciano\\ACT 7.py', reloading
+2026-09-24 06:37:50 - INFO - werkzeug -  * Restarting with stat
+2026-09-24 06:37:53 - WARNING - werkzeug -  * Debugger is active!
+2026-09-24 06:37:53 - INFO - werkzeug -  * Debugger PIN: 747-028-282
+2026-09-24 06:38:25 - INFO - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-09-24 06:38:25 - INFO - werkzeug - Press CTRL+C to quit
+2026-09-24 06:38:25 - INFO - werkzeug -  * Restarting with stat
+2026-09-24 06:38:27 - WARNING - werkzeug -  * Debugger is active!
+2026-09-24 06:38:27 - INFO - werkzeug -  * Debugger PIN: 747-028-282
+2026-09-24 06:38:30 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:38:30] "GET / HTTP/1.1" 302 -
+2026-09-24 06:38:30 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:38:30] "GET /login HTTP/1.1" 200 -
+2026-09-24 06:38:31 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:38:31] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:38:31 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:38:31] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:38:38 - ERROR - AppLogger - Database lock during login for username 'markyfufufu': syntax error at or near "PRAGMA"
+LINE 1: PRAGMA busy_timeout = 5000
+        ^
+2026-09-24 06:38:38 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:38:38] "POST /login HTTP/1.1" 200 -
+2026-09-24 06:38:38 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:38:38] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:38:51 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:38:51] "GET /login HTTP/1.1" 200 -
+2026-09-24 06:38:51 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:38:51] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:39:00 - ERROR - AppLogger - Database lock during login for username 'markyfufufu': syntax error at or near "PRAGMA"
+LINE 1: PRAGMA busy_timeout = 5000
+        ^
+2026-09-24 06:39:00 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:39:00] "POST /login HTTP/1.1" 200 -
+2026-09-24 06:39:00 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:39:00] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:39:08 - ERROR - AppLogger - Database lock during login for username 'markyfufuuadmin': syntax error at or near "PRAGMA"
+LINE 1: PRAGMA busy_timeout = 5000
+        ^
+2026-09-24 06:39:08 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:39:08] "POST /login HTTP/1.1" 200 -
+2026-09-24 06:39:08 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:39:08] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:40:31 - INFO - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-09-24 06:40:31 - INFO - werkzeug - Press CTRL+C to quit
+2026-09-24 06:40:31 - INFO - werkzeug -  * Restarting with stat
+2026-09-24 06:40:34 - WARNING - werkzeug -  * Debugger is active!
+2026-09-24 06:40:34 - INFO - werkzeug -  * Debugger PIN: 747-028-282
+2026-09-24 06:40:40 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:40:40] "GET / HTTP/1.1" 302 -
+2026-09-24 06:40:40 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:40:40] "GET /login HTTP/1.1" 200 -
+2026-09-24 06:40:40 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:40:40] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:40:40 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:40:40] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:40:48 - ERROR - AppLogger - Database lock during login for username 'markyfufufu': syntax error at or near "PRAGMA"
+LINE 1: PRAGMA busy_timeout = 5000
+        ^
+2026-09-24 06:40:48 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:40:48] "POST /login HTTP/1.1" 200 -
+2026-09-24 06:40:48 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:40:48] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:42:34 - INFO - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-09-24 06:42:34 - INFO - werkzeug - Press CTRL+C to quit
+2026-09-24 06:42:34 - INFO - werkzeug -  * Restarting with stat
+2026-09-24 06:42:36 - WARNING - werkzeug -  * Debugger is active!
+2026-09-24 06:42:36 - INFO - werkzeug -  * Debugger PIN: 747-028-282
+2026-09-24 06:42:37 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:42:37] "GET / HTTP/1.1" 302 -
+2026-09-24 06:42:37 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:42:37] "GET /login HTTP/1.1" 200 -
+2026-09-24 06:42:37 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:42:37] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:42:37 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:42:37] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:42:46 - ERROR - AppLogger - Database lock during login for username 'markyfufufu': syntax error at or near "PRAGMA"
+LINE 1: PRAGMA busy_timeout = 5000
+        ^
+2026-09-24 06:42:46 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:42:46] "POST /login HTTP/1.1" 200 -
+2026-09-24 06:42:46 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:42:46] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:43:47 - INFO - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-09-24 06:43:47 - INFO - werkzeug - Press CTRL+C to quit
+2026-09-24 06:43:47 - INFO - werkzeug -  * Restarting with stat
+2026-09-24 06:43:50 - WARNING - werkzeug -  * Debugger is active!
+2026-09-24 06:43:50 - INFO - werkzeug -  * Debugger PIN: 747-028-282
+2026-09-24 06:44:01 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:44:01] "GET / HTTP/1.1" 302 -
+2026-09-24 06:44:01 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:44:01] "GET /login HTTP/1.1" 200 -
+2026-09-24 06:44:01 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:44:01] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:44:01 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:44:01] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:44:13 - ERROR - AppLogger - Database lock during login for username 'markyfufufu': syntax error at or near "PRAGMA"
+LINE 1: PRAGMA busy_timeout = 5000
+        ^
+2026-09-24 06:44:13 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:44:13] "POST /login HTTP/1.1" 200 -
+2026-09-24 06:44:13 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:44:13] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:44:50 - INFO - werkzeug -  * Detected change in 'D:\\wow\\Software Engineer Lab Act\\ACT 7 Feliciano\\ACT 7.py', reloading
+2026-09-24 06:44:50 - INFO - werkzeug -  * Restarting with stat
+2026-09-24 06:44:52 - WARNING - werkzeug -  * Debugger is active!
+2026-09-24 06:44:52 - INFO - werkzeug -  * Debugger PIN: 747-028-282
+2026-09-24 06:44:56 - INFO - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-09-24 06:44:56 - INFO - werkzeug - Press CTRL+C to quit
+2026-09-24 06:44:56 - INFO - werkzeug -  * Restarting with stat
+2026-09-24 06:44:58 - WARNING - werkzeug -  * Debugger is active!
+2026-09-24 06:44:58 - INFO - werkzeug -  * Debugger PIN: 747-028-282
+2026-09-24 06:46:16 - INFO - werkzeug -  * Detected change in 'D:\\wow\\Software Engineer Lab Act\\ACT 7 Feliciano\\ACT 7.py', reloading
+2026-09-24 06:46:16 - INFO - werkzeug -  * Restarting with stat
+2026-09-24 06:46:19 - WARNING - werkzeug -  * Debugger is active!
+2026-09-24 06:46:19 - INFO - werkzeug -  * Debugger PIN: 747-028-282
+2026-09-24 06:47:12 - INFO - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-09-24 06:47:12 - INFO - werkzeug - Press CTRL+C to quit
+2026-09-24 06:47:12 - INFO - werkzeug -  * Restarting with stat
+2026-09-24 06:47:15 - WARNING - werkzeug -  * Debugger is active!
+2026-09-24 06:47:15 - INFO - werkzeug -  * Debugger PIN: 747-028-282
+2026-09-24 06:47:18 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:47:18] "GET / HTTP/1.1" 302 -
+2026-09-24 06:47:18 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:47:18] "GET /login HTTP/1.1" 200 -
+2026-09-24 06:47:18 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:47:18] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:47:18 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:47:18] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:47:43 - INFO - AppLogger - Account created: 'aretqar' with role 'ADMIN'
+2026-09-24 06:47:43 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:47:43] "POST /register HTTP/1.1" 302 -
+2026-09-24 06:47:43 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:47:43] "GET /login HTTP/1.1" 200 -
+2026-09-24 06:47:43 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:47:43] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:47:55 - WARNING - AppLogger - Failed login attempt for username: markyfufufu
+2026-09-24 06:47:55 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:47:55] "POST /login HTTP/1.1" 200 -
+2026-09-24 06:47:55 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:47:55] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:48:22 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:48:22] "GET /login HTTP/1.1" 200 -
+2026-09-24 06:48:22 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:48:22] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:48:57 - INFO - AppLogger - Account created: 'supamoki' with role 'ADMIN'
+2026-09-24 06:48:57 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:48:57] "POST /register HTTP/1.1" 302 -
+2026-09-24 06:48:57 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:48:57] "GET /login HTTP/1.1" 200 -
+2026-09-24 06:48:57 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:48:57] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:49:08 - INFO - AppLogger - User 'supamoki' logged in with role 'ADMIN'.
+2026-09-24 06:49:08 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:49:08] "POST /login HTTP/1.1" 302 -
+2026-09-24 06:49:19 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:49:19] "GET /dashboard HTTP/1.1" 200 -
+2026-09-24 06:49:19 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:49:19] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:49:57 - INFO - AppLogger - New inventory item added: 'Rasp pi 3' (In Stock)
+2026-09-24 06:49:57 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:49:57] "POST /admin/add HTTP/1.1" 302 -
+2026-09-24 06:50:07 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:50:07] "GET /dashboard HTTP/1.1" 200 -
+2026-09-24 06:50:07 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:50:07] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:50:12 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:50:12] "GET /logout HTTP/1.1" 302 -
+2026-09-24 06:50:12 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:50:12] "GET /login HTTP/1.1" 200 -
+2026-09-24 06:50:12 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:50:12] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:50:19 - INFO - AppLogger - User 'supamoki' logged in with role 'ADMIN'.
+2026-09-24 06:50:19 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:50:19] "POST /login HTTP/1.1" 302 -
+2026-09-24 06:50:30 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:50:30] "GET /dashboard HTTP/1.1" 200 -
+2026-09-24 06:50:30 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:50:30] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:51:49 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:51:49] "GET /logout HTTP/1.1" 302 -
+2026-09-24 06:51:49 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:51:49] "GET /login HTTP/1.1" 200 -
+2026-09-24 06:51:49 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:51:49] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:52:05 - WARNING - AppLogger - Failed login attempt for username: mokmokmoki
+2026-09-24 06:52:05 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:52:05] "POST /login HTTP/1.1" 200 -
+2026-09-24 06:52:05 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:52:05] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:52:21 - INFO - AppLogger - User 'markk' logged in with role 'USER'.
+2026-09-24 06:52:21 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:52:21] "POST /login HTTP/1.1" 302 -
+2026-09-24 06:52:28 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:52:28] "GET /dashboard HTTP/1.1" 200 -
+2026-09-24 06:52:28 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:52:28] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:53:16 - INFO - AppLogger - Borrow request submitted by 'markk' for item ID 11
+2026-09-24 06:53:16 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:53:16] "POST /borrow HTTP/1.1" 302 -
+2026-09-24 06:53:23 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:53:23] "GET /dashboard HTTP/1.1" 200 -
+2026-09-24 06:53:23 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:53:23] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:53:36 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:53:36] "GET /logout HTTP/1.1" 302 -
+2026-09-24 06:53:36 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:53:36] "GET /login HTTP/1.1" 200 -
+2026-09-24 06:53:36 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:53:36] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:53:44 - INFO - AppLogger - User 'supamoki' logged in with role 'ADMIN'.
+2026-09-24 06:53:44 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:53:44] "POST /login HTTP/1.1" 302 -
+2026-09-24 06:53:55 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:53:55] "GET /dashboard HTTP/1.1" 200 -
+2026-09-24 06:53:55 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:53:55] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 06:54:02 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:54:02] "POST /admin/borrow-action HTTP/1.1" 302 -
+2026-09-24 06:54:12 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:54:12] "GET /dashboard HTTP/1.1" 200 -
+2026-09-24 06:54:12 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 06:54:12] "GET /styles.css HTTP/1.1" 304 -

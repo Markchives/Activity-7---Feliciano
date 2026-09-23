@@ -1,0 +1,16 @@
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local databases and runtime logs
+*.db
+app_logging/
+
+# Local secrets
+.env
+
+# Editor and operating-system files
+.vscode/
+.DS_Store
