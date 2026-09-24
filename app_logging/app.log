@@ -1060,3 +1060,21 @@ LINE 1: PRAGMA busy_timeout = 5000
 2026-09-24 07:15:46 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 07:15:46] "GET /styles.css HTTP/1.1" 200 -
 2026-09-24 07:15:47 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 07:15:47] "GET /login HTTP/1.1" 200 -
 2026-09-24 07:15:47 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 07:15:47] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 09:34:52 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-09-24 09:34:52 - INFO - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-09-24 09:34:52 - INFO - werkzeug - Press CTRL+C to quit
+2026-09-24 09:34:52 - INFO - werkzeug -  * Restarting with stat
+2026-09-24 09:34:53 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-09-24 09:34:53 - WARNING - werkzeug -  * Debugger is active!
+2026-09-24 09:34:53 - INFO - werkzeug -  * Debugger PIN: 747-028-282
+2026-09-24 09:36:58 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 09:36:58] "GET / HTTP/1.1" 302 -
+2026-09-24 09:36:58 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 09:36:58] "GET /login HTTP/1.1" 200 -
+2026-09-24 09:36:58 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 09:36:58] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 09:36:59 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 09:36:59] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 09:38:12 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 09:38:12] "GET /login HTTP/1.1" 200 -
+2026-09-24 09:38:12 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 09:38:12] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 09:38:13 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 09:38:13] "GET /login HTTP/1.1" 200 -
+2026-09-24 09:38:13 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 09:38:13] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 09:38:13 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 09:38:13] "GET /login HTTP/1.1" 200 -
+2026-09-24 09:38:13 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 09:38:13] "GET /styles.css HTTP/1.1" 304 -
