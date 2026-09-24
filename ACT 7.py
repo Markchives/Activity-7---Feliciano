@@ -927,10 +927,10 @@ class TrackerController:
             conn = open_database(self.db_name)
             rows = conn.execute(
                 """
-                SELECT br.id, br.username, COALESCE(u.student_name, ''), COALESCE(u.student_number, ''), COALESCE(u.section, ''), h.name, br.quantity, br.purpose, br.requested_at, br.status
+                SELECT br.id, br.username, COALESCE(u.student_name, ''), COALESCE(u.student_number, ''), COALESCE(u.section, ''), h.name, br.quantity, br.purpose, br.requested_at, br.status, br.decided_at
                 FROM borrow_requests br JOIN hardware h ON h.id = br.item_id
                 LEFT JOIN users u ON u.username = br.username
-                WHERE br.status IN ('PENDING', 'APPROVED', 'RETURN_PENDING') ORDER BY br.requested_at DESC
+                WHERE br.status IN ('PENDING', 'APPROVED', 'RETURN_PENDING', 'RETURNED', 'REJECTED') ORDER BY br.requested_at DESC
                 """
             ).fetchall()
             conn.close()
@@ -971,6 +971,19 @@ class TrackerController:
             cursor = conn.cursor()
             cursor.execute(
                 """
+                SELECT br.item_id, br.quantity, br.username, h.name
+                FROM borrow_requests br JOIN hardware h ON h.id = br.item_id
+                WHERE br.id = ? AND br.status = 'RETURN_PENDING'
+                """,
+                (request_id,),
+            )
+            request = cursor.fetchone()
+            if not request:
+                conn.close()
+                return False, "The return request is no longer available."
+            item_id, quantity, username, item_name = request
+            cursor.execute(
+                """
                 UPDATE borrow_requests
                 SET status = 'APPROVED', decided_by = ?, decided_at = ?
                 WHERE id = ? AND status = 'RETURN_PENDING'
@@ -978,6 +991,15 @@ class TrackerController:
                 (admin_username, time.time(), request_id),
             )
             changed = cursor.rowcount
+            if changed:
+                cursor.execute(
+                    """
+                    INSERT INTO activity_records
+                    (event_type, item_id, item_name, username, quantity, quantity_delta, occurred_at, details)
+                    VALUES ('RETURN_REJECTED', ?, ?, ?, ?, 0, ?, ?)
+                    """,
+                    (item_id, item_name, username, quantity, time.time(), f"Return rejected by {admin_username}"),
+                )
             conn.commit()
             conn.close()
             if changed:
@@ -1063,14 +1085,18 @@ class TrackerController:
             conn = open_database(self.db_name)
             cursor = conn.cursor()
             cursor.execute(
-                "SELECT username, item_id, quantity FROM borrow_requests WHERE id = ? AND status = 'PENDING'",
+                """
+                SELECT br.username, br.item_id, br.quantity, h.name
+                FROM borrow_requests br JOIN hardware h ON h.id = br.item_id
+                WHERE br.id = ? AND br.status = 'PENDING'
+                """,
                 (request_id,),
             )
             request = cursor.fetchone()
             if not request:
                 conn.close()
                 return False, "The borrow request is no longer available."
-            username, item_id, quantity = request
+            username, item_id, quantity, item_name = request
             new_status = "APPROVED" if decision == "approve" else "REJECTED"
             if new_status == "APPROVED":
                 cursor.execute("SELECT name, quantity FROM hardware WHERE id = ?", (item_id,))
@@ -1090,6 +1116,15 @@ class TrackerController:
                     VALUES ('BORROW', ?, ?, ?, ?, ?, ?, ?)
                     """,
                     (item_id, item[0], username, quantity, -quantity, time.time(), "Borrow approved"),
+                )
+            else:
+                cursor.execute(
+                    """
+                    INSERT INTO activity_records
+                    (event_type, item_id, item_name, username, quantity, quantity_delta, occurred_at, details)
+                    VALUES ('BORROW_REJECTED', ?, ?, ?, ?, 0, ?, ?)
+                    """,
+                    (item_id, item_name, username, quantity, time.time(), f"Borrow rejected by {admin_username}"),
                 )
             cursor.execute(
                 "UPDATE borrow_requests SET status = ?, decided_by = ?, decided_at = ? WHERE id = ?",

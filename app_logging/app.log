@@ -1078,3 +1078,77 @@ LINE 1: PRAGMA busy_timeout = 5000
 2026-09-24 09:38:13 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 09:38:13] "GET /styles.css HTTP/1.1" 304 -
 2026-09-24 09:38:13 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 09:38:13] "GET /login HTTP/1.1" 200 -
 2026-09-24 09:38:13 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 09:38:13] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 09:55:23 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-09-24 09:55:23 - INFO - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-09-24 09:55:23 - INFO - werkzeug - Press CTRL+C to quit
+2026-09-24 09:55:23 - INFO - werkzeug -  * Restarting with stat
+2026-09-24 09:55:24 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-09-24 09:55:24 - WARNING - werkzeug -  * Debugger is active!
+2026-09-24 09:55:24 - INFO - werkzeug -  * Debugger PIN: 747-028-282
+2026-09-24 09:55:27 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 09:55:27] "GET /login HTTP/1.1" 200 -
+2026-09-24 09:55:27 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 09:55:27] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 09:55:27 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 09:55:27] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 09:55:32 - INFO - AppLogger - User 'markk' logged in with role 'USER'.
+2026-09-24 09:55:32 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 09:55:32] "POST /login HTTP/1.1" 302 -
+2026-09-24 09:55:32 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 09:55:32] "GET /dashboard HTTP/1.1" 200 -
+2026-09-24 09:55:32 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 09:55:32] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 09:56:11 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 09:56:11] "GET /logout HTTP/1.1" 302 -
+2026-09-24 09:56:11 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 09:56:11] "GET /login HTTP/1.1" 200 -
+2026-09-24 09:56:11 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 09:56:11] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 09:56:39 - INFO - AppLogger - User 'markk' logged in with role 'USER'.
+2026-09-24 09:56:39 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 09:56:39] "POST /login HTTP/1.1" 302 -
+2026-09-24 09:56:39 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 09:56:39] "GET /dashboard HTTP/1.1" 200 -
+2026-09-24 09:56:39 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 09:56:39] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 09:59:59 - INFO - werkzeug -  * Detected change in 'D:\\wow\\Software Engineer Lab Act\\ACT 7 Feliciano\\ACT 7.py', reloading
+2026-09-24 10:00:00 - INFO - werkzeug -  * Restarting with stat
+2026-09-24 10:00:01 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-09-24 10:00:01 - WARNING - werkzeug -  * Debugger is active!
+2026-09-24 10:00:01 - INFO - werkzeug -  * Debugger PIN: 747-028-282
+2026-09-24 10:00:41 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:00:41] "GET /dashboard HTTP/1.1" 200 -
+2026-09-24 10:00:41 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:00:41] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 10:00:55 - INFO - AppLogger - Borrow request submitted by 'markk' for item ID 1
+2026-09-24 10:00:55 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:00:55] "POST /borrow HTTP/1.1" 302 -
+2026-09-24 10:00:55 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:00:55] "GET /dashboard HTTP/1.1" 200 -
+2026-09-24 10:00:55 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:00:55] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 10:01:02 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:01:02] "GET /logout HTTP/1.1" 302 -
+2026-09-24 10:01:02 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:01:02] "GET /login HTTP/1.1" 200 -
+2026-09-24 10:01:02 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:01:02] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 10:01:02 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:01:02] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 10:01:15 - WARNING - AppLogger - Failed login attempt for username: supamoki
+2026-09-24 10:01:15 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:01:15] "POST /login HTTP/1.1" 200 -
+2026-09-24 10:01:15 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:01:15] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 10:01:28 - WARNING - AppLogger - Failed login attempt for username: supamoki
+2026-09-24 10:01:28 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:01:28] "POST /login HTTP/1.1" 200 -
+2026-09-24 10:01:28 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:01:28] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 10:01:40 - INFO - AppLogger - User 'markk' logged in with role 'USER'.
+2026-09-24 10:01:40 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:01:40] "POST /login HTTP/1.1" 302 -
+2026-09-24 10:01:40 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:01:40] "GET /dashboard HTTP/1.1" 200 -
+2026-09-24 10:01:40 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:01:40] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 10:01:42 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:01:42] "GET /logout HTTP/1.1" 302 -
+2026-09-24 10:01:42 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:01:42] "GET /login HTTP/1.1" 200 -
+2026-09-24 10:01:42 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:01:42] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 10:02:24 - INFO - AppLogger - Account created: 'supamoki' with role 'ADMIN'
+2026-09-24 10:02:24 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:02:24] "POST /register HTTP/1.1" 302 -
+2026-09-24 10:02:24 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:02:24] "GET /login HTTP/1.1" 200 -
+2026-09-24 10:02:24 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:02:24] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 10:02:31 - INFO - AppLogger - User 'supamoki' logged in with role 'ADMIN'.
+2026-09-24 10:02:31 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:02:31] "POST /login HTTP/1.1" 302 -
+2026-09-24 10:02:31 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:02:31] "GET /dashboard HTTP/1.1" 200 -
+2026-09-24 10:02:31 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:02:31] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 10:02:31 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:02:31] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 10:02:59 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:02:59] "POST /admin/borrow-action HTTP/1.1" 302 -
+2026-09-24 10:02:59 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:02:59] "GET /dashboard HTTP/1.1" 200 -
+2026-09-24 10:02:59 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:02:59] "GET /styles.css HTTP/1.1" 304 -
+2026-09-24 10:04:21 - INFO - werkzeug -  * Detected change in 'D:\\wow\\Software Engineer Lab Act\\ACT 7 Feliciano\\ACT 7.py', reloading
+2026-09-24 10:04:21 - INFO - werkzeug -  * Restarting with stat
+2026-09-24 10:04:22 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-09-24 10:04:22 - WARNING - werkzeug -  * Debugger is active!
+2026-09-24 10:04:22 - INFO - werkzeug -  * Debugger PIN: 747-028-282
+2026-09-24 10:05:05 - INFO - werkzeug -  * Detected change in 'D:\\wow\\Software Engineer Lab Act\\ACT 7 Feliciano\\ACT 7.py', reloading
+2026-09-24 10:05:06 - INFO - werkzeug -  * Restarting with stat
+2026-09-24 10:05:07 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-09-24 10:05:07 - WARNING - werkzeug -  * Debugger is active!
+2026-09-24 10:05:07 - INFO - werkzeug -  * Debugger PIN: 747-028-282
+2026-09-24 10:05:08 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:05:08] "GET /dashboard HTTP/1.1" 200 -
+2026-09-24 10:05:08 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:05:08] "GET /styles.css HTTP/1.1" 304 -
