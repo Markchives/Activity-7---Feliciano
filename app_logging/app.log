@@ -1282,3 +1282,17 @@ LINE 1: PRAGMA busy_timeout = 5000
 2026-10-01 10:28:48 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 10:28:48] "POST /register HTTP/1.1" 302 -
 2026-10-01 10:28:48 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 10:28:48] "GET /login HTTP/1.1" 200 -
 2026-10-01 10:28:48 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 10:28:48] "GET /styles.css HTTP/1.1" 304 -
+2026-10-01 10:35:39 - INFO - werkzeug -  * Detected change in 'D:\\wow\\Software Engineer Lab Act\\ACT 7 Feliciano\\app.py', reloading
+2026-10-01 10:35:39 - INFO - werkzeug -  * Restarting with stat
+2026-10-01 10:35:40 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 10:35:40 - WARNING - werkzeug -  * Debugger is active!
+2026-10-01 10:35:40 - INFO - werkzeug -  * Debugger PIN: 518-742-027
+2026-10-01 10:35:51 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 10:36:20 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 10:36:20 - INFO - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-10-01 10:36:20 - INFO - werkzeug - Press CTRL+C to quit
+2026-10-01 10:36:20 - INFO - werkzeug -  * Restarting with stat
+2026-10-01 10:36:21 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 10:36:21 - WARNING - werkzeug -  * Debugger is active!
+2026-10-01 10:36:21 - INFO - werkzeug -  * Debugger PIN: 518-742-027

@@ -188,13 +188,39 @@ def verify_otp(action):
                 session.pop(session_key, None)
                 flash(message, "success" if ok else "danger")
             else:
-                ok, message = auth.request_password_reset(data["username"], data["email"])
                 session.pop(session_key, None)
-                flash(message, "success" if ok else "danger")
+                session["verified_reset_username"] = data["username"]
+                flash("Email verified. Enter your new password.", "info")
+                return redirect(url_for("reset_password"))
             return redirect(url_for("login"))
         flash("Invalid OTP code. Try again.", "danger")
 
     return render_template("otp_verify.html", action_url=url_for("verify_otp", action=action))
+
+
+@app.route("/reset-password", methods=["GET", "POST"])
+def reset_password():
+    username = session.get("verified_reset_username")
+    if not username:
+        flash("Please verify your email before resetting your password.", "warning")
+        return redirect(url_for("login"))
+
+    if request.method == "POST":
+        new_password = request.form.get("new_password", "")
+        confirm_password = request.form.get("confirm_password", "")
+        if not new_password or not confirm_password:
+            flash("Both password fields are required.", "danger")
+        elif new_password != confirm_password:
+            flash("New passwords do not match.", "danger")
+        else:
+            ok, message = auth.change_password(username, new_password)
+            if ok:
+                session.pop("verified_reset_username", None)
+                flash("Password changed successfully. You can now log in.", "success")
+                return redirect(url_for("login"))
+            flash(message, "danger")
+
+    return render_template("reset_password.html")
 
 
 @app.route("/dashboard")
