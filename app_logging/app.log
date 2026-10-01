@@ -1179,3 +1179,20 @@ LINE 1: PRAGMA busy_timeout = 5000
 2026-10-01 09:13:19 - INFO - werkzeug -  * Debugger PIN: 518-742-027
 2026-10-01 09:21:46 - INFO - werkzeug -  * Detected change in 'D:\\wow\\Software Engineer Lab Act\\ACT 7 Feliciano\\app.py', reloading
 2026-10-01 09:21:46 - INFO - werkzeug -  * Restarting with stat
+2026-10-01 09:21:47 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 09:21:47 - WARNING - werkzeug -  * Debugger is active!
+2026-10-01 09:21:47 - INFO - werkzeug -  * Debugger PIN: 518-742-027
+2026-10-01 09:26:23 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 09:26:43 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 09:27:31 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 09:27:56 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 09:28:23 - INFO - werkzeug -  * Detected change in 'D:\\wow\\Software Engineer Lab Act\\ACT 7 Feliciano\\app.py', reloading
+2026-10-01 09:28:23 - INFO - werkzeug -  * Restarting with stat
+2026-10-01 09:28:24 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 09:28:24 - WARNING - werkzeug -  * Debugger is active!
+2026-10-01 09:28:24 - INFO - werkzeug -  * Debugger PIN: 518-742-027
+2026-10-01 09:28:50 - INFO - werkzeug -  * Detected change in 'D:\\wow\\Software Engineer Lab Act\\ACT 7 Feliciano\\app.py', reloading
+2026-10-01 09:28:50 - INFO - werkzeug -  * Restarting with stat
+2026-10-01 09:28:51 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 09:28:51 - WARNING - werkzeug -  * Debugger is active!
+2026-10-01 09:28:51 - INFO - werkzeug -  * Debugger PIN: 518-742-027

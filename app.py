@@ -22,8 +22,8 @@ app.secret_key = os.environ.get("SECRET_KEY", "act7-development-secret")
 
 SMTP_SERVER = os.environ.get("SMTP_SERVER", "smtp-relay.brevo.com")
 SMTP_PORT = int(os.environ.get("SMTP_PORT", "2525"))
-SMTP_LOGIN = os.environ.get("SMTP_LOGIN", "justinmarkfeliciano25@gmail.com")
-SMTP_PASSWORD = os.environ.get("SMTP_PASSWORD", "w#Chz7uz%S%65$m")
+SMTP_LOGIN = os.environ.get("SMTP_LOGIN", "")
+SMTP_PASSWORD = os.environ.get("SMTP_PASSWORD", "")
 SMTP_SENDER = os.environ.get("SMTP_SENDER", SMTP_LOGIN)
 
 
