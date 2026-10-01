@@ -1224,3 +1224,61 @@ LINE 1: PRAGMA busy_timeout = 5000
 2026-10-01 09:58:21 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
 2026-10-01 09:58:21 - WARNING - werkzeug -  * Debugger is active!
 2026-10-01 09:58:21 - INFO - werkzeug -  * Debugger PIN: 518-742-027
+2026-10-01 10:13:35 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 10:13:35] "POST /register HTTP/1.1" 302 -
+2026-10-01 10:13:35 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 10:13:35] "POST /register HTTP/1.1" 302 -
+2026-10-01 10:21:23 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 10:21:23 - INFO - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-10-01 10:21:23 - INFO - werkzeug - Press CTRL+C to quit
+2026-10-01 10:21:23 - INFO - werkzeug -  * Restarting with stat
+2026-10-01 10:21:24 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 10:21:24 - WARNING - werkzeug -  * Debugger is active!
+2026-10-01 10:21:24 - INFO - werkzeug -  * Debugger PIN: 518-742-027
+2026-10-01 10:21:26 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 10:21:26] "GET / HTTP/1.1" 302 -
+2026-10-01 10:21:26 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 10:21:26] "GET /login HTTP/1.1" 200 -
+2026-10-01 10:21:26 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 10:21:26] "GET /styles.css HTTP/1.1" 304 -
+2026-10-01 10:21:26 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 10:21:26] "GET /styles.css HTTP/1.1" 304 -
+2026-10-01 10:21:42 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 10:21:42] "GET /login HTTP/1.1" 200 -
+2026-10-01 10:21:42 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 10:21:42] "GET /styles.css HTTP/1.1" 304 -
+2026-10-01 10:22:19 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 10:22:19] "POST /register HTTP/1.1" 302 -
+2026-10-01 10:22:19 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 10:22:19] "GET /login HTTP/1.1" 200 -
+2026-10-01 10:22:19 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 10:22:19] "GET /styles.css HTTP/1.1" 304 -
+2026-10-01 10:23:39 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 10:23:39 - INFO - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-10-01 10:23:39 - INFO - werkzeug - Press CTRL+C to quit
+2026-10-01 10:23:39 - INFO - werkzeug -  * Restarting with stat
+2026-10-01 10:23:40 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 10:23:40 - WARNING - werkzeug -  * Debugger is active!
+2026-10-01 10:23:40 - INFO - werkzeug -  * Debugger PIN: 518-742-027
+2026-10-01 10:25:56 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 10:25:56 - INFO - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-10-01 10:25:56 - INFO - werkzeug - Press CTRL+C to quit
+2026-10-01 10:25:56 - INFO - werkzeug -  * Restarting with stat
+2026-10-01 10:25:56 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 10:25:56 - WARNING - werkzeug -  * Debugger is active!
+2026-10-01 10:25:56 - INFO - werkzeug -  * Debugger PIN: 518-742-027
+2026-10-01 10:25:58 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 10:25:58] "GET / HTTP/1.1" 302 -
+2026-10-01 10:25:58 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 10:25:58] "GET /login HTTP/1.1" 200 -
+2026-10-01 10:25:58 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 10:25:58] "GET /styles.css HTTP/1.1" 304 -
+2026-10-01 10:25:58 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 10:25:58] "GET /styles.css HTTP/1.1" 304 -
+2026-10-01 10:26:08 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 10:26:08] "GET /login HTTP/1.1" 200 -
+2026-10-01 10:26:08 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 10:26:08] "GET /styles.css HTTP/1.1" 304 -
+2026-10-01 10:26:35 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 10:26:35] "POST /register HTTP/1.1" 302 -
+2026-10-01 10:26:35 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 10:26:35] "GET /login HTTP/1.1" 200 -
+2026-10-01 10:26:35 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 10:26:35] "GET /styles.css HTTP/1.1" 304 -
+2026-10-01 10:28:23 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 10:28:23 - INFO - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-10-01 10:28:23 - INFO - werkzeug - Press CTRL+C to quit
+2026-10-01 10:28:23 - INFO - werkzeug -  * Restarting with stat
+2026-10-01 10:28:24 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 10:28:24 - WARNING - werkzeug -  * Debugger is active!
+2026-10-01 10:28:24 - INFO - werkzeug -  * Debugger PIN: 518-742-027
+2026-10-01 10:28:29 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 10:28:29] "GET /login HTTP/1.1" 200 -
+2026-10-01 10:28:29 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 10:28:29] "GET /styles.css HTTP/1.1" 304 -
+2026-10-01 10:28:47 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 10:28:47] "POST /register HTTP/1.1" 302 -
+2026-10-01 10:28:48 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 10:28:48] "POST /register HTTP/1.1" 302 -
+2026-10-01 10:28:48 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 10:28:48] "GET /login HTTP/1.1" 200 -
+2026-10-01 10:28:48 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 10:28:48] "GET /styles.css HTTP/1.1" 304 -
