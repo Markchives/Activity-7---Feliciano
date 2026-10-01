@@ -1296,3 +1296,20 @@ LINE 1: PRAGMA busy_timeout = 5000
 2026-10-01 10:36:21 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
 2026-10-01 10:36:21 - WARNING - werkzeug -  * Debugger is active!
 2026-10-01 10:36:21 - INFO - werkzeug -  * Debugger PIN: 518-742-027
+2026-10-01 10:41:47 - INFO - werkzeug -  * Detected change in 'D:\\wow\\Software Engineer Lab Act\\ACT 7 Feliciano\\ACT 7.py', reloading
+2026-10-01 10:41:47 - INFO - werkzeug -  * Restarting with stat
+2026-10-01 10:41:48 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 10:41:48 - WARNING - werkzeug -  * Debugger is active!
+2026-10-01 10:41:48 - INFO - werkzeug -  * Debugger PIN: 518-742-027
+2026-10-01 10:42:29 - INFO - werkzeug -  * Detected change in 'D:\\wow\\Software Engineer Lab Act\\ACT 7 Feliciano\\ACT 7.py', reloading
+2026-10-01 10:42:29 - INFO - werkzeug -  * Restarting with stat
+2026-10-01 10:42:30 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 10:42:30 - WARNING - werkzeug -  * Debugger is active!
+2026-10-01 10:42:30 - INFO - werkzeug -  * Debugger PIN: 518-742-027
+2026-10-01 10:42:38 - INFO - werkzeug -  * Detected change in 'D:\\wow\\Software Engineer Lab Act\\ACT 7 Feliciano\\app.py', reloading
+2026-10-01 10:42:38 - INFO - werkzeug -  * Restarting with stat
+2026-10-01 10:42:39 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 10:42:39 - WARNING - werkzeug -  * Debugger is active!
+2026-10-01 10:42:39 - INFO - werkzeug -  * Debugger PIN: 518-742-027
+2026-10-01 10:42:41 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 10:43:07 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db

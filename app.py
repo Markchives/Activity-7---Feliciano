@@ -1,12 +1,14 @@
 import importlib.util
 import os
 import random
+import re
 import smtplib
 from datetime import datetime
 from email.mime.text import MIMEText
 from functools import wraps
 from pathlib import Path
 
+import bcrypt
 from flask import Flask, flash, redirect, render_template, request, send_file, session, url_for
 
 
@@ -49,6 +51,32 @@ def send_otp_email(receiver_email, otp, intent):
 act7.init_db()
 auth = act7.AuthController()
 tracker = act7.TrackerController()
+
+
+def change_password_for_user(username, new_password):
+    if len(new_password) < 8:
+        return False, "Password must be at least 8 characters long."
+    if not re.search(r"[A-Z]", new_password):
+        return False, "Password needs at least one uppercase letter."
+    if not re.search(r"[0-9]", new_password):
+        return False, "Password needs at least one number."
+    if not re.search(r"[@#$%^&*]", new_password):
+        return False, "Password needs at least one special character like @, #, $, %, ^, &, or *."
+
+    hashed_password = bcrypt.hashpw(new_password.encode("utf-8"), bcrypt.gensalt()).decode("utf-8")
+    try:
+        conn = auth._connect()
+        cursor = conn.cursor()
+        cursor.execute(
+            "UPDATE users SET password_hash = ?, failed_attempts = 0, lockout_until = 0 WHERE username = ?",
+            (hashed_password, username),
+        )
+        conn.commit()
+        conn.close()
+        return True, "Password updated successfully."
+    except Exception as error:
+        print(f"Password update error: {error}")
+        return False, "Unable to update the password. Please try again."
 
 
 @app.template_filter("activity_time")
@@ -213,7 +241,7 @@ def reset_password():
         elif new_password != confirm_password:
             flash("New passwords do not match.", "danger")
         else:
-            ok, message = auth.change_password(username, new_password)
+            ok, message = change_password_for_user(username, new_password)
             if ok:
                 session.pop("verified_reset_username", None)
                 flash("Password changed successfully. You can now log in.", "success")
