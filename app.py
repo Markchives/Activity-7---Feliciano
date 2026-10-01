@@ -1,6 +1,9 @@
 import importlib.util
 import os
+import random
+import smtplib
 from datetime import datetime
+from email.mime.text import MIMEText
 from functools import wraps
 from pathlib import Path
 
@@ -16,6 +19,32 @@ spec.loader.exec_module(act7)
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY", "act7-development-secret")
+
+SMTP_SERVER = os.environ.get("SMTP_SERVER", "smtp-relay.brevo.com")
+SMTP_PORT = int(os.environ.get("SMTP_PORT", "2525"))
+SMTP_LOGIN = os.environ.get("SMTP_LOGIN", "")
+SMTP_PASSWORD = os.environ.get("SMTP_PASSWORD", "")
+SMTP_SENDER = os.environ.get("SMTP_SENDER", SMTP_LOGIN)
+
+
+def send_otp_email(receiver_email, otp, intent):
+    message = MIMEText(
+        f"Your {intent} One-Time Password (OTP) is: {otp}\n\n"
+        "Please enter this code to proceed. Do not share this code with anyone."
+    )
+    message["Subject"] = f"Laboratory System - {intent} OTP"
+    message["From"] = SMTP_SENDER
+    message["To"] = receiver_email
+
+    try:
+        with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
+            server.starttls()
+            server.login(SMTP_LOGIN, SMTP_PASSWORD)
+            server.send_message(message)
+        return True
+    except Exception as error:
+        print(f"Email Error: {error}")
+        return False
 
 act7.init_db()
 auth = act7.AuthController()
@@ -85,27 +114,87 @@ def register():
     name = request.form.get("student_name", "").strip()
     if role == "ADMIN":
         name = request.form.get("admin_name", "").strip()
-    ok, message = auth.register_user(
-        request.form.get("username", "").strip(),
-        request.form.get("email", "").strip(),
-        request.form.get("password", ""),
-        role=role,
-        student_name=name,
-        student_number=request.form.get("student_number", "").strip(),
-        section=request.form.get("section", "").strip(),
-    )
-    flash(message, "success" if ok else "danger")
+    username = request.form.get("username", "").strip()
+    email = request.form.get("email", "").strip()
+    password = request.form.get("password", "")
+    if not username or not email or not password:
+        flash("All registration fields are required.", "danger")
+        return redirect(url_for("login"))
+
+    otp = str(random.randint(100000, 999999))
+    session["pending_user"] = {
+        "username": username,
+        "email": email,
+        "password": password,
+        "role": role,
+        "student_name": name,
+        "student_number": request.form.get("student_number", "").strip(),
+        "section": request.form.get("section", "").strip(),
+        "otp": otp,
+    }
+    if send_otp_email(email, otp, intent="Account Registration"):
+        flash("We sent a 6-digit code to your email. Please verify.", "info")
+        return redirect(url_for("verify_otp", action="register"))
+
+    session.pop("pending_user", None)
+    flash("Failed to send OTP email. Please try again.", "danger")
     return redirect(url_for("login"))
 
 
 @app.route("/reset-request", methods=["POST"])
 def reset_request():
-    ok, message = auth.request_password_reset(
-        request.form.get("username", "").strip(),
-        request.form.get("email", "").strip(),
-    )
-    flash(message, "success" if ok else "danger")
+    username = request.form.get("username", "").strip()
+    email = request.form.get("email", "").strip()
+    if not username or not email:
+        flash("Username and email are required.", "danger")
+        return redirect(url_for("login"))
+
+    otp = str(random.randint(100000, 999999))
+    session["pending_reset"] = {"username": username, "email": email, "otp": otp}
+    if send_otp_email(email, otp, intent="Password Reset"):
+        flash("We sent a 6-digit code to your email. Please verify.", "info")
+        return redirect(url_for("verify_otp", action="reset"))
+
+    session.pop("pending_reset", None)
+    flash("Failed to send OTP email. Please try again.", "danger")
     return redirect(url_for("login"))
+
+
+@app.route("/verify-otp/<action>", methods=["GET", "POST"])
+def verify_otp(action):
+    if action not in {"register", "reset"}:
+        flash("Invalid verification request.", "danger")
+        return redirect(url_for("login"))
+
+    session_key = "pending_user" if action == "register" else "pending_reset"
+    if session_key not in session:
+        flash("Session expired. Please try again.", "warning")
+        return redirect(url_for("login"))
+
+    if request.method == "POST":
+        user_otp = request.form.get("otp_code", "").strip()
+        data = session[session_key]
+        if user_otp == data["otp"]:
+            if action == "register":
+                ok, message = auth.register_user(
+                    data["username"],
+                    data["email"],
+                    data["password"],
+                    role=data["role"],
+                    student_name=data["student_name"],
+                    student_number=data["student_number"],
+                    section=data["section"],
+                )
+                session.pop(session_key, None)
+                flash(message, "success" if ok else "danger")
+            else:
+                ok, message = auth.request_password_reset(data["username"], data["email"])
+                session.pop(session_key, None)
+                flash(message, "success" if ok else "danger")
+            return redirect(url_for("login"))
+        flash("Invalid OTP code. Try again.", "danger")
+
+    return render_template("otp_verify.html", action_url=url_for("verify_otp", action=action))
 
 
 @app.route("/dashboard")

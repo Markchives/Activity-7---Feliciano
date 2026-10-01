@@ -31,7 +31,7 @@
       <input id="registration-password" name="password" type="password" placeholder="Password" required>
       <button class="password-toggle" type="button" data-password-toggle="registration-password" aria-label="Show password" title="Show password">Show</button>
     </span>
-    <button type="submit">Register</button>
+    <button class="primary wide" type="submit">Send Verification Code <span>→</span></button>
   </form>
 </section>
 <section style="max-width:520px;margin:40px auto">
@@ -39,7 +39,7 @@
   <form method="post" action="{{ url_for('reset_request') }}" class="grid reset-form">
     <input name="username" placeholder="Username" required>
     <input name="email" type="email" placeholder="Account email" required>
-    <button type="submit">Request reset</button>
+    <button class="primary wide" type="submit" style="background-color: #d67a00; border-color: #d67a00; color: white;">Send Verification Code <span>→</span></button>
   </form>
 </section>
 <script>

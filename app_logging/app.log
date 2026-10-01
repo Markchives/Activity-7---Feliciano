@@ -1152,3 +1152,28 @@ LINE 1: PRAGMA busy_timeout = 5000
 2026-09-24 10:05:07 - INFO - werkzeug -  * Debugger PIN: 747-028-282
 2026-09-24 10:05:08 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:05:08] "GET /dashboard HTTP/1.1" 200 -
 2026-09-24 10:05:08 - INFO - werkzeug - 127.0.0.1 - - [24/Sep/2026 10:05:08] "GET /styles.css HTTP/1.1" 304 -
+2026-10-01 09:08:06 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 09:09:51 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 09:09:57 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 09:11:16 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 09:11:17 - INFO - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-10-01 09:11:17 - INFO - werkzeug - Press CTRL+C to quit
+2026-10-01 09:11:17 - INFO - werkzeug -  * Restarting with stat
+2026-10-01 09:11:18 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 09:11:18 - WARNING - werkzeug -  * Debugger is active!
+2026-10-01 09:11:18 - INFO - werkzeug -  * Debugger PIN: 518-742-027
+2026-10-01 09:11:47 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 09:11:47] "GET / HTTP/1.1" 302 -
+2026-10-01 09:11:47 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 09:11:47] "GET /login HTTP/1.1" 200 -
+2026-10-01 09:11:47 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 09:11:47] "GET /styles.css HTTP/1.1" 200 -
+2026-10-01 09:11:47 - INFO - werkzeug - 127.0.0.1 - - [01/Oct/2026 09:11:47] "GET /styles.css HTTP/1.1" 304 -
+2026-10-01 09:13:07 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 09:13:13 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 09:13:18 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 09:13:18 - INFO - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-10-01 09:13:18 - INFO - werkzeug - Press CTRL+C to quit
+2026-10-01 09:13:18 - INFO - werkzeug -  * Restarting with stat
+2026-10-01 09:13:19 - INFO - AppLogger - Hardware inventory database initialized successfully at D:\wow\Software Engineer Lab Act\SUPPLEMENTARY ACTIVITIES\hardware_inventory.db
+2026-10-01 09:13:19 - WARNING - werkzeug -  * Debugger is active!
+2026-10-01 09:13:19 - INFO - werkzeug -  * Debugger PIN: 518-742-027
